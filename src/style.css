@@ -1,0 +1,17 @@
+body {
+    font-family:'Times New Roman', Times, serif
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+}
+
+
+@media screen and (min-width: 1280px) {
+    body{
+        width: 70vw !important;
+        margin: auto;
+        border: solid;
+    }
+}
