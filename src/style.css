@@ -1,10 +1,15 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    color: black;  
+    color: black;
+    font-size: 16px;  
 }
 
 
-h1, h3, .telephone{
+h1, h3, .telephone {
+    color: #2d9cdb;
+}
+
+.navbar-brand {
     color: #2d9cdb;
 }
 
@@ -16,10 +21,10 @@ h1, h2 {
 
 .contact a {
     text-decoration: none;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
-h3,.telephone {
+h3,.telephone, .navbar-brand {
     font-size: 24px;
     font-weight: bold;
 }
@@ -36,9 +41,18 @@ h3,.telephone {
 }
 
 .photo-infir img {   
-    width: 90%;    
+    width: 90%;
+    margin: auto;
+    display: block;   
+}
+.pcr p {
+    margin: auto;
+    text-align: center;
 }
 
+.pcr {
+    margin-bottom: 5%;
+}
 .pcr img {
     width: 50%;
 }
@@ -52,7 +66,8 @@ h3,.telephone {
     body {
         width: 60vw !important;
         margin: auto;
-        border: solid;
+        border: 2px;
+        font-size: 24px;
     }
     
     nav {
@@ -64,8 +79,14 @@ h3,.telephone {
         font-size: 48px;
     }
     
+    h3 {
+        font-size: 36px;
+    }
     .nav-link {
         font-size: 24px;
     }
     
+    .pcr p {
+        font-size: 36px ;
+    }
 }
