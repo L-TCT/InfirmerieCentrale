@@ -3,6 +3,7 @@ body {
     color: black;  
 }
 
+
 h1, h3, .telephone{
     color: #2d9cdb;
 }
@@ -48,10 +49,15 @@ h3,.telephone {
 
 
 @media screen and (min-width: 992px) {
-    body{
+    body {
         width: 60vw !important;
         margin: auto;
         border: solid;
+    }
+    
+    nav {
+        width: 60vw !important;
+        margin: auto; 
     }
     
     h1, h2 {
