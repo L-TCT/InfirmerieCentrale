@@ -1,24 +1,25 @@
 .grid-container {
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
     gap: 3% 0px;
     justify-items: center;
     grid-template-areas:
       "icone titre "
-      "photo-infir photo-infir"
+      "entree entree"
       "contact contact ";
   }
   .icone { 
-      grid-area: icone; 
+      grid-area: icone;
+      place-self: center; 
     }
   .titre { 
       grid-area: titre;
       place-self: center; 
     }
-  .photo-infir { 
-      grid-area: photo-infir;
-      display: flex; 
+  .entree {
+      grid-area: entree;
+      place-self: center;
     }
   .contact { 
       grid-area: contact;
@@ -29,20 +30,17 @@
   @media screen and (min-width: 992px) {
     .grid-container {
         display: grid;
-        grid-template-columns: 20% 50% 30%;
+        grid-template-columns: 25% 50% 25%;
         grid-template-rows: 0.5fr auto;
-        gap: 5% 0px;
+        gap: 3% 0px;
         grid-template-areas:
           "icone titre contact"
-          "photo-infir photo-infir photo-infir";
+          "entree entree entree";
       }
       .icone { grid-area: icone; }
       .titre { grid-area: titre; }
       .contact { grid-area: contact; }  
-      .photo-infir { grid-area: photo-infir;
-      width: 100%;
-      display: flex;
-      margin-bottom: 5%;
+      .entree { grid-area: entree;
      } 
     }
 
