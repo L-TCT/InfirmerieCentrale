@@ -1,17 +1,19 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 0.5fr auto;
     gap: 3% 0px;
-    justify-items: center;
     grid-template-areas:
-      "icone titre "
-      "entree entree"
-      "contact contact ";
+      "icone titre contact"
+      "entree entree entree";
   }
+  
   .icone { 
       grid-area: icone;
-      place-self: center; 
+      place-self: center;
+      display: flex;
+      width: 100%;
+      height: 200px;
     }
   .titre { 
       grid-area: titre;
@@ -25,22 +27,21 @@
       grid-area: contact;
       place-self: center; 
       margin-bottom: 5%;
+      display: flex;
+      flex-direction: column;
     }
   
-  @media screen and (min-width: 992px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: 25% 50% 25%;
-        grid-template-rows: 0.5fr auto;
-        gap: 3% 0px;
-        grid-template-areas:
-          "icone titre contact"
-          "entree entree entree";
-      }
-      .icone { grid-area: icone; }
-      .titre { grid-area: titre; }
-      .contact { grid-area: contact; }  
-      .entree { grid-area: entree;
-     } 
-    }
 
+    @media screen and (max-width: 992px) {
+      .grid-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 0.5fr auto 0.5fr;
+        gap: 3% 0px;
+        justify-items: center;
+        grid-template-areas:
+          "icone titre "
+          "entree entree"
+          "contact contact ";
+    }
+  }

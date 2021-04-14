@@ -1,41 +1,35 @@
+@font-face {
+    font-family: "futura";
+    src: url("../font/futur.ttf") format("truetype");
+    src: url("../font/Futura\ Bold\ font.ttf") format("truetype");
+    src: url("../font/futura\ medium\ bt.ttf") format("truetype")
+}
 body {
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 16px;  
+    font-family: 'futura';
+    color: #303030;
+    font-size: 16px; 
+    padding: 0;
+    margin: 0;
 }
-
-
+.container {
+    position: relative;
+    margin-top: 140px;
+}
 h1, h3, .telephone {
-    color: #2d9cdb;
+    color: #96b6ba;
 }
-
-
-
-h1, h2 {
+h2 {
+    color: #d63230;
+}
+h1, h2 { 
     text-align: center;
     font-size: 30px;
     font-weight: bold;
 }
 
-.contact a {
-    text-decoration: none;
-    margin-top: 2%;
-}
-
-h3,.telephone, .navbar-brand {
+h3 {
     font-size: 24px;
     font-weight: bold;
-}
-
-
-.adresse {
-    font-size: 18px;
-    color: black;
-}
-
-.adresse p {
-    margin-left: 2%;
-   
 }
 
 .pcr p {
@@ -46,7 +40,11 @@ h3,.telephone, .navbar-brand {
 .pcr {
     margin-bottom: 5%;
 }
-.pcr img {
+#pcr-img {
+    background:url("../images/covid19500.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 50%;
 } 
 
@@ -60,35 +58,25 @@ h3,.telephone, .navbar-brand {
 
 
 
-@media screen and (min-width: 992px) {
+ @media screen and (min-width: 992px) {
     body {
-        width: 60vw !important;
+        width: 60vw;
         margin: auto;
         border: 2px;
         font-size: 24px;
-    }
+    } 
     
-    nav {
-        width: 60vw !important;
-        margin: auto; 
-    }
     
     h1, h2 {
         font-size: 48px;
     }
     
-    h3, .telephone {
+    h3 {
         font-size: 36px;
-    }
-    .nav-link {
-        font-size: 24px;
     }
     
     .pcr p {
         font-size: 36px ;
     }
     
-   .adresse {
-        font-size: 26px;
-    }
-}
+} 

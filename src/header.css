@@ -1,0 +1,41 @@
+.icone {
+    background:url("../images/LOGO_VV.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.telephone {
+    font-size: 26px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.telephone svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.adresse {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+}
+
+.adresse svg {
+    width: 40px;
+    height: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+    margin-top: 2%;
+}
+
+.adresse p {
+    margin-left: 2%;
+   
+}

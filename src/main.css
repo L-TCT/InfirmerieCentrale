@@ -1,0 +1,10 @@
+.pcr {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
