@@ -1,6 +1,16 @@
+main p {
+    margin-left: 6%;
+}
+section::before{
+   display:block;
+   content:"";
+   height: 80px;
+   margin: -80px 0 0;
+}
 .pcr {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 5%;
 }
 
 .plan {
@@ -8,3 +18,36 @@
     flex-direction: column;
     align-items: center;
 }
+
+#hours{
+    margin-top: 7%;
+}
+
+#activities li, #hours li{
+    margin-left: 10%;
+    line-height: 1.5;
+}
+.pcr p {
+    margin: auto;
+    text-align: center;
+}
+
+#pcr-img {
+    background:url("../images/covid19500.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+} 
+
+.plan img {
+    width: 80%;
+}
+
+
+.plan iframe {
+    width: 80%;
+    height: 400px;
+}
+
+

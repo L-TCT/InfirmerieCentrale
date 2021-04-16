@@ -4,6 +4,11 @@
     src: url("../font/Futura\ Bold\ font.ttf") format("truetype");
     src: url("../font/futura\ medium\ bt.ttf") format("truetype")
 }
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'futura';
     color: #303030;
@@ -13,9 +18,10 @@ body {
 }
 .container {
     position: relative;
-    margin-top: 140px;
+    margin-top: 100px;
 }
-h1, h3, .telephone {
+
+h1, h3, .phone {
     color: #96b6ba;
 }
 h2 {
@@ -30,35 +36,13 @@ h1, h2 {
 h3 {
     font-size: 24px;
     font-weight: bold;
-}
-
-.pcr p {
-    margin: auto;
-    text-align: center;
-}
-
-.pcr {
-    margin-bottom: 5%;
-}
-#pcr-img {
-    background:url("../images/covid19500.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50%;
-} 
-
-.plan img {
-    width: 100%;
-}
-
-.entree img {
-    width: 100%;
+    margin-left: 2%;
 }
 
 
 
- @media screen and (min-width: 992px) {
+
+ @media screen and (min-width: 900px) {
     body {
         width: 60vw;
         margin: auto;

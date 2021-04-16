@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <title>Infirmerie Centrale - Toulon</title>
     <link rel="stylesheet" href="./src/style.css"/>
     <link rel="stylesheet" href="./src/nav.css"/>
     <link rel="stylesheet" href="./src/grid.css"/>
     <link rel="stylesheet" href="./src/header.css"/>
     <link rel="stylesheet" href="./src/main.css"/>
+    <link rel="stylesheet" href="./src/gallery.css"/>
+    <link rel="stylesheet" href="./src/footer.css"/>
 </head>
-<body>
+<body id="start">
     <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo">Infirmerie<br>Centrale</div>
+        <div class="nav-brand"><a href="#start">Infirmerie<br>Centrale</a></div>
         <ul class="links">
             <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#activites">Activités</a></li>
-            <li><a href="#galerie">Galerie</a></li>
-            <li><a href="#horaires">Horaires d'ouverture</a></li>
-            <li><a href="#carte">Se rendre au cabinet</a></li>
+            <li><a href="#activities">Activités</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#hours">Horaires d'ouverture</a></li>
+            <li><a href="#map">Se rendre au cabinet</a></li>
         </ul>
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
@@ -30,20 +33,20 @@
     </nav> 
     <div class="container">
         <header class="grid-container">
-                <div class="icone">
+                <div class="logo">
                 </div>
-                <div class="titre" id="title">
+                <div class="title-grid" id="title">
                     <h1 >INFIRMERIE<br> CENTRALE</h1>
                 </div>
-                <div class="entree">
+                <div class="entrance">
                     <img src="images/entree500.jpg" alt="Infirmerie">
                 </div>
                 <div class="contact">
-                    <a class="telephone" href="tel:+33494931897">
+                    <a class="phone" href="tel:+33494931897">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#96b6ba"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42a18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></g><rect x="0" y="0" width="16" height="16" fill="rgba(0, 0, 0, 0)" /></svg>
                         <p>04.94.93.18.97</p>
                     </a>
-                    <a class="adresse" href="#carte">
+                    <a class="address" href="#carte">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1200 1200"><path d="M600 0C350.178 0 147.656 202.521 147.656 452.344c0 83.547 16.353 169.837 63.281 232.031L600 1200l389.062-515.625c42.625-56.49 63.281-156.356 63.281-232.031C1052.344 202.521 849.822 0 600 0zm0 261.987c105.116 0 190.356 85.241 190.356 190.356C790.356 557.46 705.116 642.7 600 642.7s-190.356-85.24-190.356-190.356S494.884 261.987 600 261.987z" fill="#96b6ba"/><rect x="0" y="0" width="1200" height="1200" fill="rgba(0, 0, 0, 0)" /></svg>
                         <p>22 rue Paul Lendrin<br>83000 Toulon</p>
                     </a>
@@ -61,7 +64,7 @@
                 <h3>Présentation</h3>
                 <p>Fondée en 1980, l'infirmerie centrale se situe en plein coeur de Toulon</p>
             </section>
-            <section id="activites">
+            <section id="activities">
                 <h3>Activités</h3>
                 <p>Le cabinet réalise:</p>
                 <ul>
@@ -78,45 +81,20 @@
                     <li>Soins à <strong>domicile</strong> sur <strong>rendez-vous</strong></li>
                 </ul>
             </section>
-            <section id="galerie">
+            <section id="gallery">
                 <h3>Galerie</h3>
-                <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="container-gallery">
+                    <div class="main-img">
+                      <img src="images/salleDattente500.png" id="current">
+                    </div> 
+                    <div class="imgs">
+                      <img src="images/salleDattente500.png">
+                      <img src="images/secretariat500.png">
+                      <img src="images/salledesoins500.png">
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/IMG_3826.jpg" class="d-block w-100" alt="salle d'attente">
-                        <div class="carousel-caption d-block">
-                          <h5>salle d'attente</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/7. Secrétariat (1).jpg" class="d-block w-100" alt="secrétariat">
-                        <div class="carousel-caption d-block">
-                          <h5>secrétariat</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/IMG_3830.jpg" class="d-block w-100" alt="salle de soins">
-                        <div class="carousel-caption d-block">
-                          <h5>salle de soins</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div> -->
+                </div>
             </section>
-            <section id="horaires">
+            <section id="hours">
                 <h3>Horaires d'ouverture</h3>
                 <p>Le cabinet est ouvert 7 jours/7:</p>
                 <ul>
@@ -125,18 +103,20 @@
                     <li>le dimanche:<br>09:00 - 12:00 / 17:30 - 18:00</li>
                 </ul>
             </section>
-            <section id="carte">
+            <section id="map">
                 <h3>Se rendre au cabinet</h3>
                 <div class="plan">
-                    <iframe width="80%" height="250" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfcXtkA4byRIRE7dF2owHxkc&key=AIzaSyDmw7capNmpBw808Vb8CIzHmPtT1sJv9hM"></iframe>
+                    <iframe style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfcXtkA4byRIRE7dF2owHxkc&key=AIzaSyDmw7capNmpBw808Vb8CIzHmPtT1sJv9hM"></iframe>
                     <p>En voiture, vous pouvez vous garer au parking Peiresc (payant)</p>
-                    <img src="images/5. Parking PEIRESC vers Infirmerie Centrale (1).jpg">
+                    <img src="images/deplacement.jpg">
                 </div>
             </section>   
         </main>
         <footer>
-            
+            <a href="#">mentions légales</a>
+            <a href="#">Webmaster: Laurence Turcotti</a>
         </footer>  
     </div>
+<script src="src/gallery.js"></script>
 </body>
 </html>

@@ -1,26 +1,26 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 30% 35% 35%;
     grid-template-rows: 0.5fr auto;
     gap: 3% 0px;
     grid-template-areas:
-      "icone titre contact"
-      "entree entree entree";
+      "logo title-grid contact"
+      "entrance entrance entrance";
   }
   
-  .icone { 
-      grid-area: icone;
+  .logo { 
+      grid-area: logo;
       place-self: center;
       display: flex;
       width: 100%;
       height: 200px;
     }
-  .titre { 
-      grid-area: titre;
+  .title-grid { 
+      grid-area: title-grid;
       place-self: center; 
     }
-  .entree {
-      grid-area: entree;
+  .entrance {
+      grid-area: entrance;
       place-self: center;
     }
   .contact { 
@@ -35,13 +35,14 @@
     @media screen and (max-width: 992px) {
       .grid-container {
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 40% 60%;
         grid-template-rows: 0.5fr auto 0.5fr;
         gap: 3% 0px;
         justify-items: center;
         grid-template-areas:
-          "icone titre "
-          "entree entree"
+          "logo title-grid "
+          "entrance entrance"
           "contact contact ";
     }
+  
   }

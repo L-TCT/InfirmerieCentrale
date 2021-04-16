@@ -13,12 +13,17 @@ nav {
     justify-content: space-around;
 }
 
-nav .logo {
+nav .nav-brand {
     width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
     color: white;
+}
+
+nav .nav-brand a {
+    color: white;
+    text-decoration: none;
 }
 
 nav .links {
@@ -71,7 +76,7 @@ nav .icon-burger .line {
         margin: 0;
     }
     
-    nav .logo {
+    nav .nav-brand{
         justify-content: center;
     }
     
@@ -80,7 +85,7 @@ nav .icon-burger .line {
         z-index: 9;
         left: 0;
         right: 0;
-        top: 100px;
+        top: 90px;
         bottom: 100%;
         width: auto;
         height: auto;
