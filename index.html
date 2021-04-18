@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cabinet de soins infirmiers sans rendez-vous au coeur de Toulon. Réalisation test PCR dans le cadre du COVID-19"/>
+    <meta name="keywords" content="soins infirmiers, infirmier, Toulon, COVID, PCR, sans rendez-vous"/>
+    <meta name="robots" content="index"/>
+    <meta name="Geography" content="Toulon">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <title>Infirmerie Centrale - Toulon</title>
     <link rel="stylesheet" href="./src/style.css"/>
     <link rel="stylesheet" href="./src/nav.css"/>
-    <link rel="stylesheet" href="./src/grid.css"/>
     <link rel="stylesheet" href="./src/header.css"/>
     <link rel="stylesheet" href="./src/main.css"/>
     <link rel="stylesheet" href="./src/gallery.css"/>
@@ -23,6 +26,7 @@
             <li><a href="#activities">Activités</a></li>
             <li><a href="#gallery">Galerie</a></li>
             <li><a href="#hours">Horaires d'ouverture</a></li>
+            <li><a href="#covid">Info covid</a></li>
             <li><a href="#map">Se rendre au cabinet</a></li>
         </ul>
         <label for="nav-toggle" class="icon-burger">
@@ -32,34 +36,29 @@
         </label>
     </nav> 
     <div class="container">
-        <header class="grid-container">
-                <div class="logo">
+        <header>
+            <div class= title> 
+                <div class="logo"></div>
+                <div class="text-title">
+                    <h1>CABINET DE SOINS INFIRMIERS</h1>
+                    <h2>sans rendez-vous</h2>
                 </div>
-                <div class="title-grid" id="title">
-                    <h1 >INFIRMERIE<br> CENTRALE</h1>
-                </div>
-                <div class="entrance">
-                    <img src="images/entree500.jpg" alt="Infirmerie">
-                </div>
-                <div class="contact">
-                    <a class="phone" href="tel:+33494931897">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#96b6ba"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42a18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></g><rect x="0" y="0" width="16" height="16" fill="rgba(0, 0, 0, 0)" /></svg>
-                        <p>04.94.93.18.97</p>
-                    </a>
-                    <a class="address" href="#carte">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1200 1200"><path d="M600 0C350.178 0 147.656 202.521 147.656 452.344c0 83.547 16.353 169.837 63.281 232.031L600 1200l389.062-515.625c42.625-56.49 63.281-156.356 63.281-232.031C1052.344 202.521 849.822 0 600 0zm0 261.987c105.116 0 190.356 85.241 190.356 190.356C790.356 557.46 705.116 642.7 600 642.7s-190.356-85.24-190.356-190.356S494.884 261.987 600 261.987z" fill="#96b6ba"/><rect x="0" y="0" width="1200" height="1200" fill="rgba(0, 0, 0, 0)" /></svg>
-                        <p>22 rue Paul Lendrin<br>83000 Toulon</p>
-                    </a>
-                </div>
+            </div>
+            <div class="entrance">
+                <img src="images/entree500.jpg" alt="entrée de l'infirmerie">
+            </div>
+            <div class="contact">
+                <a class="phone" href="tel:+33494931897">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#96b6ba"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42a18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></g><rect x="0" y="0" width="16" height="16" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <p>04.94.93.18.97</p>
+                </a>
+                <a class="address" href="#carte">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1200 1200"><path d="M600 0C350.178 0 147.656 202.521 147.656 452.344c0 83.547 16.353 169.837 63.281 232.031L600 1200l389.062-515.625c42.625-56.49 63.281-156.356 63.281-232.031C1052.344 202.521 849.822 0 600 0zm0 261.987c105.116 0 190.356 85.241 190.356 190.356C790.356 557.46 705.116 642.7 600 642.7s-190.356-85.24-190.356-190.356S494.884 261.987 600 261.987z" fill="#96b6ba"/><rect x="0" y="0" width="1200" height="1200" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <p>22 rue Paul Lendrin<br>83000 Toulon</p>
+                </a>
+            </div>
         </header>
         <main>
-            <section id="covid">
-                <h2 class="text-danger">INFO COVID 19</h2>
-                <div class="pcr">
-                    <p>TEST <strong>PCR<br></strong>ET<strong><br> ANTIGENIQUE<br>SANS RENDEZ-VOUS</strong></p>
-                    <div id="pcr-img"></div>
-                </div>
-            </section>
             <section id="presentation">
                 <h3>Présentation</h3>
                 <p>Fondée en 1980, l'infirmerie centrale se situe en plein coeur de Toulon</p>
@@ -100,8 +99,15 @@
                 <ul>
                     <li>du lundi au vendredi:<br>09:00 - 12:00 / 15:30 - 19:00</li>
                     <li>Le samedi:<br>09:00 - 12:00 / 17:00 - 18:00</li>
-                    <li>le dimanche:<br>09:00 - 12:00 / 17:30 - 18:00</li>
+                    <li>le dimanche:<br>09:00 - 12:00 / 17:00 - 18:00</li>
                 </ul>
+            </section>
+            <section id="covid">
+                <h2 class="text-danger">INFO COVID 19</h2>
+                <div class="pcr">
+                    <p>TEST <strong>PCR<br></strong>ET<strong><br> ANTIGENIQUE<br>SANS RENDEZ-VOUS</strong></p>
+                    <div id="pcr-img"></div>
+                </div>
             </section>
             <section id="map">
                 <h3>Se rendre au cabinet</h3>

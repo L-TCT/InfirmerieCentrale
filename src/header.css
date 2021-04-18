@@ -1,33 +1,73 @@
+.title, .entance, .contact {
+    display: flex;
+}
+
+.title {
+    justify-content: space-evenly;
+}
+
 .logo {
     background:url("../images/LOGO_VV.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    width: 35%;
+    margin: 0;
+    height: 25vh;
+}
+
+.text-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1, .text-title h2 {
+    font-weight: normal;
+}
+
+h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.text-title h2 {
+    margin-top: 0;
+}
+
+.contact {
+    justify-content: space-around;
 }
 .phone {
-    font-size: 26px;
+    font-size: 1rem;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    color: #303030;
+    width: 50%;
 }
 
 .phone svg {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    margin-right: 2%;
 }
 
 .address {
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 21px;
-    color: black;
+    font-size: 1rem;
+    color: #303030;
+    width: 50%;
 }
 
 .address svg {
     width: 40px;
     height: 40px;
+    margin-right: 2%;
 }
 
 .contact a {
@@ -35,17 +75,10 @@
     margin-top: 2%;
 }
 
-.address p {
-    margin-left: 2%;
-   
-}
 
 .entrance img {
     width: 100%;
 }
 
-@media screen and (max-width: 992px) {
-    .logo  {
-        margin-left: 10%;
-    }
-}
+
+

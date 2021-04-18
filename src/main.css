@@ -23,6 +23,12 @@ section::before{
     margin-top: 7%;
 }
 
+#covid h2 {
+    color: #d63230;
+    font-weight: bold;
+    text-align: center;
+}
+
 #activities li, #hours li{
     margin-left: 10%;
     line-height: 1.5;
