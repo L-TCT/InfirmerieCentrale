@@ -44,7 +44,7 @@ img {
 }
 
 
- @media (min-width: 1030px) {
+ @media screen and (min-width: 1020px) {
     html {
         width: 60vw;
         margin: auto;
