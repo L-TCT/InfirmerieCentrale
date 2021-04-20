@@ -4,6 +4,7 @@
 
 .title {
     justify-content: space-evenly;
+    height: 40vh;
 }
 
 .logo {
@@ -80,5 +81,23 @@ h1 {
     width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+    .title {
+        height: 30vh;
+    }
+    
+    .logo {
+        height: 30vh;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .title {
+        height: 20vh;
+    }
+    
+    .logo {
+        height: 20vh;
+    }
+}
 
